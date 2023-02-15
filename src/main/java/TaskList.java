@@ -24,6 +24,10 @@ public class TaskList {
         this.taskList.remove(taskIndex - 1);
     }
 
+    /**
+     * Mark task.
+     * @param taskIndex Index of the task to mark off.
+     */
     public void markTask(int taskIndex) {
         Task taskToMark = this.getTask(taskIndex);
         taskToMark.mark();
